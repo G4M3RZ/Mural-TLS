@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="tortuga_v2" size="2.000000 1.819472" />
+    <ImageTarget name="ballena_v2" size="2.000000 1.354140" />
+    <ImageTarget name="tortuga" size="2.000000 1.454509" />
+    <ImageTarget name="wale" size="5.000000 2.956410" />
     <ImageTarget name="origami" size="3.000000 2.317129" />
     <ImageTarget name="mariposa" size="3.000000 2.496605" />
-    <ImageTarget name="tortuga" size="2.000000 1.419480" />
     <ImageTarget name="colibri" size="4.000000 5.133113" />
-    <ImageTarget name="wale" size="5.000000 2.683416" />
   </Tracking>
 </QCARConfig>
