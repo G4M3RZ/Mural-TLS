@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1463186f7905ae54e81f98717086e0f4, type: 3}
-  m_Name: 2_Colibri
+  m_Name: 5_Lentes
   m_EditorClassIdentifier: 
-  index: 1
-  message: busca un colibri
+  index: 4
+  message: "Con dos patas encorvadas\ny dos amplios ventanales\nquitan sol o dan
+    visi\xF3n\nseg\xFAn sean sus cristales."
   start: 1
   complete: 3

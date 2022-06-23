@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1463186f7905ae54e81f98717086e0f4, type: 3}
-  m_Name: 3_Tortuga
+  m_Name: 6_Tls
   m_EditorClassIdentifier: 
-  index: 2
-  message: busca una tortuga
+  index: 5
+  message: Usa el # para soltar la creatividad en tu interior
   start: 1
   complete: 3

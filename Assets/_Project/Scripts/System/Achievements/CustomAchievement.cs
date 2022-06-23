@@ -4,7 +4,7 @@ using UnityEngine;
 public class CustomAchievement : ScriptableObject
 {
     public int index;
-    public string message;
+    [TextArea] public string message;
 
     [Header("Animation")]
     public States start;

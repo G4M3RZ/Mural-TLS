@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 8_Corona
   m_EditorClassIdentifier: 
   index: 7
-  message: busca una corona
+  message: Busca al rey que tiene la corona mas grande.
   start: 2
   complete: 3

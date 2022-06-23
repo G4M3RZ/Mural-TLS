@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -53,10 +54,12 @@ public class Achievements : MonoBehaviour
             }
         }
 
-        if (!incomplete && !_lock.complete)
-        {
-            onComplete.Invoke();
-        }
+        StartCoroutine(Delay(!incomplete));
+    }
+    private IEnumerator Delay(bool complete)
+    {
+        yield return new WaitForSeconds(1f);
+        if (complete && !_lock.complete) onComplete.Invoke();
     }
     public void Unlock(CustomAchievement achievement)
     {

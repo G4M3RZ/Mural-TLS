@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="adncrativo" size="1.000000 0.498422" />
+    <ImageTarget name="LOGO_VIBRATLS" size="1.000000 0.511927" />
+    <ImageTarget name="chicoX" size="1.000000 1.412687" />
+    <ImageTarget name="personax_con_lentes" size="0.500000 0.654412" />
+    <ImageTarget name="KAT" size="0.500000 0.561043" />
     <ImageTarget name="espiral" size="2.000000 2.701859" />
     <ImageTarget name="bicicleta" size="3.000000 4.078652" />
     <ImageTarget name="tortuga_v2" size="2.000000 1.819472" />
