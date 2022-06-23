@@ -1,6 +1,7 @@
 using System.IO;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class SceneController : MonoBehaviour
 
     public void OpernURL(string url) => Application.OpenURL(url);
     public void ShareButton() => StartCoroutine(TakeScreenshotAndShare());
+
+    public void CutScene(int index) => SceneManager.LoadScene(index);
 
     private void HideUI(bool active)
     {
@@ -26,6 +29,8 @@ public class SceneController : MonoBehaviour
         string filePath = Path.Combine(Application.temporaryCachePath, "shared img.png");
         File.WriteAllBytes(filePath, ss.EncodeToPNG());
 
+        yield return new WaitForEndOfFrame();
+
         // To avoid memory leaks
         Destroy(ss);
 
@@ -35,8 +40,5 @@ public class SceneController : MonoBehaviour
             .Share();
 
         HideUI(false);
-        // Share on WhatsApp only, if installed (Android only)
-        //if( NativeShare.TargetExists( "com.whatsapp" ) )
-        //    new NativeShare().AddFile( filePath ).AddTarget( "com.whatsapp" ).Share();
     }
 }
