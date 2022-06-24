@@ -13,6 +13,7 @@ public class Achievements : MonoBehaviour
         public List<bool> enable;
     }
 
+    [SerializeField] private int _limit;
     [SerializeField] private Lock _lock;
     [SerializeField] private List<Init_Animator> _elements;
     [SerializeField] private List<CustomAchievement> achievements;
@@ -35,15 +36,15 @@ public class Achievements : MonoBehaviour
 
             if (_lock.index.Contains(a.index))
             {
-                if (!_lock.enable[i])
+                if (!_lock.enable[a.index])
                 {
-                    _lock.enable[i] = true;
-                    _elements[i].SetState(a.start);
+                    _lock.enable[a.index] = true;
+                    _elements[a.index].SetState(a.start);
                     SaveSystem.WriteJson(_lock, FilePath.player);
                 }
                 else
                 {
-                    _elements[i].SetState(a.complete);
+                    _elements[a.index].SetState(a.complete);
                 }
             }
             else
@@ -69,10 +70,11 @@ public class Achievements : MonoBehaviour
         int index = achievement.index;
         if(!_lock.index.Contains(index))
         {
-            _lock.index[index] = index;
+            _lock.index[index] = achievement.index;
             onUnlock.Invoke();
 
-            if (!_lock.enable.Contains(false)) onComplete.Invoke();
+            //List<bool> enabled = _lock.enable.FindAll(x => x == true);
+            //if (enabled.Count >= _limit) StartCoroutine(Delay(!incomplete));
 
             SaveSystem.WriteJson(_lock, FilePath.player);
         }
