@@ -59,7 +59,8 @@ public class Achievements : MonoBehaviour
     private IEnumerator Delay(bool complete)
     {
         yield return new WaitForSeconds(1f);
-        if (complete && !_lock.complete) onComplete.Invoke();
+        if (complete && !_lock.complete) /*onComplete.Invoke();*/
+            Application.OpenURL("");
     }
     public void Unlock(CustomAchievement achievement)
     {
@@ -72,7 +73,7 @@ public class Achievements : MonoBehaviour
             _lock.index[index] = index;
             onUnlock.Invoke();
 
-            if (!_lock.enable.Contains(false)) onComplete.Invoke();
+            //if (!_lock.enable.Contains(false)) onComplete.Invoke();
 
             SaveSystem.WriteJson(_lock, FilePath.player);
         }
