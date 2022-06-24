@@ -59,8 +59,12 @@ public class Achievements : MonoBehaviour
     private IEnumerator Delay(bool complete)
     {
         yield return new WaitForSeconds(1f);
-        if (complete && !_lock.complete) /*onComplete.Invoke();*/
-            Application.OpenURL("");
+        if (complete && !_lock.complete)
+        {
+            Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSci-QfGA1j2gi4V6huE4ZwWYmvd4W_8nmtFJE8yo2mswH6flg/viewform");
+            _lock.complete = true;
+            SaveSystem.WriteJson(_lock, FilePath.player);
+        } /*onComplete.Invoke();*/
     }
     public void Unlock(CustomAchievement achievement)
     {
