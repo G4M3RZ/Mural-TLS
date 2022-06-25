@@ -35,15 +35,15 @@ public class Achievements : MonoBehaviour
 
             if (_lock.index.Contains(a.index))
             {
-                if (!_lock.enable[i])
+                if (!_lock.enable[a.index])
                 {
-                    _lock.enable[i] = true;
-                    _elements[i].SetState(a.start);
+                    _lock.enable[a.index] = true;
+                    _elements[a.index].SetState(a.start);
                     SaveSystem.WriteJson(_lock, FilePath.player);
                 }
                 else
                 {
-                    _elements[i].SetState(a.complete);
+                    _elements[a.index].SetState(a.complete);
                 }
             }
             else
@@ -74,7 +74,7 @@ public class Achievements : MonoBehaviour
         int index = achievement.index;
         if(!_lock.index.Contains(index))
         {
-            _lock.index[index] = index;
+            _lock.index[index] = achievement.index;
             onUnlock.Invoke();
 
             //if (!_lock.enable.Contains(false)) onComplete.Invoke();
