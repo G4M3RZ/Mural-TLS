@@ -17,7 +17,7 @@ namespace UserInterface.FX.Image
         }
         private void OnDisable()
         {
-            if (!dependecy) return;
+            if (dependecy) return;
             ImageEvent.onEnable -= ScaleIn;
             ImageEvent.onDisable -= ScaleOut;
         }

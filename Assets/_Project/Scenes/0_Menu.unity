@@ -402,7 +402,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 397414052}
-  - component: {fileID: 397414053}
   m_Layer: 0
   m_Name: Firebase
   m_TagString: Untagged
@@ -424,18 +423,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &397414053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397414051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9880cc1045da3343838ba8933819654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &486377176
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!1 &761907584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!1 &1018257178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,7 +1367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!1 &1486902209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,7 +1884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!114 &1626901488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1910,7 +1897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!1 &1729958352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +1952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!114 &1729958355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1978,7 +1965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!114 &1729958356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2288,7 +2275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72c1cd0ce7341744a4d4fb5b2a14bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dependecy: 0
+  dependecy: 1
 --- !u!1 &1762711444
 GameObject:
   m_ObjectHideFlags: 0
